@@ -1,0 +1,125 @@
+1)git:-version control,scm(local repository)changes will track (version )meaning
+2)github:-source code management(central repository)
+3)git:-client,cli local repository
+4)github:-central repository
+5)www.github.com(we have to sign in)
+6)enter your email:pravallika.ponakala@gmail.com
+7)password:
+8)we have to create new repository:- pravali1123(user name)/pravallika-trainning-devop(repository)
+only public we have to keep for private we have to pay money after that we have to press create repository
+8)we have to create one launch instance
+
+10)linux commmand promt
+[root@ip-172-31-45-120 ~]# touch pravallika.txt
+[root@ip-172-31-45-120 ~]# vi pravallika.txt
+[root@ip-172-31-45-120 ~]# ls
+pravallika  pravallika.txt
+[root@ip-172-31-45-120 ~]#yum install git
+
+--------git and git hub communication--------
+1)git clone
+2)git int
+3)git config
+
+----stages--
+1)work space--red untracked file
+2)index--green->ready to push central repository
+3)local repository->nothing to commit
+4)central repository->github.com
+
+---public key setup for local repository--
+ssh-keygen
+
+--commands----
+1)cd .ssh/
+2)ls
+3)cat id-rsa.pub
+
+
+[root@ip-172-31-45-120 ~]# cd .ssh/
+[root@ip-172-31-45-120 .ssh]# ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+[root@ip-172-31-45-120 .ssh]# cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDKKY8GcCmv1iabZNlARrUlmyACRX9DTwVa1DWPfJw3wTWt3MWI/p6FMH8m/EsNWvG3lEVLQRSk3czO6KTws3jmKBOEl6udb2LgwQiLED86FLAHIED+hY6zcHJHb0IDf/XVkU6TpV5cP/QHBs1/QpSDsxCktDSnKjsICsjDJItcYUP0eHh29BSVu+o7DeuoYkwar/W8Hy1A55XuB58+iHfR4s0hEA/F55L+4acwUG++2vvgO4tdZkkjQx9rI1SiiZyAZeqT8O0rdWDaBRyPlqBpiWqXj5OWqqoUxOoIohVs4+8Tbcaxp+MAF+1cBmpPzijGHWTy4Mwbea8yW3ez3gE1ZSF+/dOwGJ3M0bzzmlTqn6OcbewK+8MaKxq0QQ1+zZ+bCt2z1lD+aD18xAZHjImqZY89d3IZH5HSxlBqbpB5wKvR3uz5z7jL8Q8cpJnUMRWXM12trN/g8RwV78tockpQryqrcdbq389uK5C2c0gld2fH7pxChzzmuE5TTMg+0zc= root@ip-172-31-45-120.ap-south-1.compute.intern
+4)cd
+---we have to keep repository name inside the root----
+5)cd git-real time
+[root@ip-172-31-45-120 git-real time]#
+6)pwd
+7)ls-al
+8)cd .git/
+9)ls
+10)cat config
+11)ls
+12)cd ..
+13)ls
+14)cd
+15)ls
+16)mv pravallika.txt git-real time/
+17)cd git-real time/
+ls
+pravallika.txt
+
+
+18)git status
+(red color)
+git add pravallika.txt
+git status(green color)
+git commit -m "this is my first file pushing"
+git config --global user name "pravali1123 "
+git config --global password "Sahasra1@"
+git commit -m "this is my first file pushing"
+git push origin main
+
+
+----git remote-------
+git remote add class git@github.com:pravali1123/pravallika-trainning-devops.git
+touch 1.txt(add one file )
+git status(untracked files means workspace it will comes in red colour)
+git add 1.txt(adding files)
+git commit -m"2nd commit"
+git push class main
+git remote rename class don
+git remote
+git remote remove don
+git remote
+
+:
+----git branch------
+git branch
+main
+git checkout-b feature:wq
+git branch
+touch 2.txt
+git add 2.txt
+git commit -m "testing mergs"
+git push origin feature
+
+note 1:-main branch changes copy to destination branch while checkout from sorce to destination
+note2:-destination branch does not reflect to destination branch
+note3:-merge push destination branch
+note5:-dont push any branches in the main branch push subbranches it will put rbranches like stage ,main,deployment--:,feature,testing
+
+
+
+---tags----
+git tag 
+git tag -l
+git tag -a "vision"
+git tag -l
+git push origin tag vision
+
+
+git checkout -b rama seetha
+ls
+-----git reflog------ 1.html
+
+git checkout main
+touch 1.html
+git add 
+
+
+
+
+
+
